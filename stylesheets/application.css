@@ -1,10 +1,4 @@
 @import url(default_mod_application.css);
-.box {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
-
 a.svg {
   position: relative;
   display: inline-block; }
@@ -200,6 +194,10 @@ body, html {
             font-weight: 200;
             line-height: 35px;
             padding-left: 10px; }
+          #wrapper #main-wrapper #main #content #welcome-left .tooltip {
+            font-size: 14px; }
+          #wrapper #main-wrapper #main #content #welcome-left .tooltip-inner {
+            min-width: 150px; }
           #wrapper #main-wrapper #main #content #welcome-left .welcome-menu {
             margin: 0px;
             padding: 0px;
@@ -214,12 +212,13 @@ body, html {
                 display: inline-block; }
               #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a {
                 display: inline-block;
-                color: white;
+                color: #fdb74f;
+                white-space: nowrap;
                 width: 70px;
                 height: 70px;
                 line-height: 70px;
                 vertical-align: middle;
-                background: #fdb74f;
+                border: 2px solid #fdb74f;
                 -webkit-border-radius: 80px;
                 -moz-border-radius: 80px;
                 -ms-border-radius: 80px;
@@ -227,9 +226,16 @@ body, html {
                 overflow: hidden;
                 text-align: center;
                 margin-left: 20px; }
+                #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a:hover {
+                  transition: all 0.2s ease-in 0s;
+                  -moz-transition: all 0.2s ease-in 0s;
+                  -webkit-transition: all 0.2s ease-in 0s;
+                  -o-transition: all 0.2s ease-in 0s;
+                  color: white;
+                  border-color: white; }
                 #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a .fa {
                   font-size: 35px;
-                  line-height: 70px; }
+                  line-height: 66px; }
                 #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a .fa-users {
                   font-size: 31px; }
                 #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a .fa-ticket {
