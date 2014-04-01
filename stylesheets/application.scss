@@ -28,6 +28,17 @@ $large: 1200px;
 
 // Mixins 
 
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -941,6 +952,69 @@ body.controller-welcome {
 
 					}	
 				}
+
+				// Custom Editor
+
+				.jstElements {
+					button {
+					@include border-radius(4px);
+					@include linear-gradient(#fff, #DDD);
+					height:30px;
+					width: 30px;
+					padding:0px;
+					border-color:#BCBCBC;
+					&:hover {color:#6699FF;}
+					text-shadow: 0 1px 0 #FFFFFF;
+					margin-bottom:5px;
+
+					}
+					.jstb_strong {
+					&:before {content:"\f032";font-family:FontAwesome;}
+					}
+					.jstb_em {
+					&:before {content:"\f033";font-family:FontAwesome;}
+					}
+					.jstb_ins {
+					&:before {content:"\f0cd";font-family:FontAwesome;}
+					}
+					.jstb_del {
+					&:before {content:"\f0cc";font-family:FontAwesome;}
+					}
+					.jstb_code {
+					&:before {content:"\f121";font-family:FontAwesome;}
+					}
+					.jstb_link {
+					&:before {content:"\f02d";font-family:FontAwesome;}
+					}
+					.linker {
+					&:before {content:"\f0c1";font-family:FontAwesome;}
+					}
+					.jstb_img {
+					&:before {content:"\f03e";font-family:FontAwesome;}
+					}
+
+				}
+
+				#pretty_preview_label {
+				cursor:pointer;
+				@include border-radius(4px);
+				@include linear-gradient(#fff, #DDD);
+				padding:3px 8px;
+				border:1px solid #BCBCBC;
+				margin:5px 0px 8px;
+				clear:both;
+				text-shadow: 0 1px 0 #FFFFFF;
+				&:hover {color:#6699FF;}
+				&:before {content:"\f06e";font-family:FontAwesome;margin-right:5px;}
+				}
+
+				#pretty_preview {
+				margin:0px 0px 20px;
+				@include border-radius(3px);
+				border-color:#E8E8E8;
+				background:transparent;
+				}
+
 			
 			} // End Content
 

@@ -588,6 +588,96 @@ body.controller-welcome #main-wrapper {
         margin: 0px;
         padding: 0px;
         margin: 0px 0px 20px; }
+    #wrapper #main-wrapper #main #content .jstElements button {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      background-color: #dddddd;
+      /* Fallback Color */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dddddd));
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, white, #dddddd);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background-image: -moz-linear-gradient(top, white, #dddddd);
+      /* FF3.6 */
+      background-image: -ms-linear-gradient(top, white, #dddddd);
+      /* IE10 */
+      background-image: -o-linear-gradient(top, white, #dddddd);
+      /* Opera 11.10+ */
+      background-image: linear-gradient(top, white, #dddddd);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');
+      height: 30px;
+      width: 30px;
+      padding: 0px;
+      border-color: #BCBCBC;
+      text-shadow: 0 1px 0 #FFFFFF;
+      margin-bottom: 5px; }
+      #wrapper #main-wrapper #main #content .jstElements button:hover {
+        color: #6699FF; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_strong:before {
+      content: "\f032";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_em:before {
+      content: "\f033";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_ins:before {
+      content: "\f0cd";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_del:before {
+      content: "\f0cc";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_code:before {
+      content: "\f121";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_link:before {
+      content: "\f02d";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .linker:before {
+      content: "\f0c1";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_img:before {
+      content: "\f03e";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content #pretty_preview_label {
+      cursor: pointer;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      background-color: #dddddd;
+      /* Fallback Color */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dddddd));
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, white, #dddddd);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background-image: -moz-linear-gradient(top, white, #dddddd);
+      /* FF3.6 */
+      background-image: -ms-linear-gradient(top, white, #dddddd);
+      /* IE10 */
+      background-image: -o-linear-gradient(top, white, #dddddd);
+      /* Opera 11.10+ */
+      background-image: linear-gradient(top, white, #dddddd);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');
+      padding: 3px 8px;
+      border: 1px solid #BCBCBC;
+      margin: 5px 0px 8px;
+      clear: both;
+      text-shadow: 0 1px 0 #FFFFFF; }
+      #wrapper #main-wrapper #main #content #pretty_preview_label:hover {
+        color: #6699FF; }
+      #wrapper #main-wrapper #main #content #pretty_preview_label:before {
+        content: "\f06e";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+    #wrapper #main-wrapper #main #content #pretty_preview {
+      margin: 0px 0px 20px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      border-color: #E8E8E8;
+      background: transparent; }
     #wrapper #main-wrapper #main #sidebar {
       background: #595959;
       color: white;
