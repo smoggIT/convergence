@@ -565,7 +565,8 @@ body.controller-welcome #main-wrapper {
       #wrapper #main-wrapper #main #content .tabs ul li a.selected {
         color: #404040; }
     #wrapper #main-wrapper #main #content .contextual {
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 20px; }
     #wrapper #main-wrapper #main #content #activity h3 {
       font-size: 20px;
       font-weight: 200;
@@ -678,6 +679,11 @@ body.controller-welcome #main-wrapper {
       border-radius: 3px;
       border-color: #E8E8E8;
       background: transparent; }
+    #wrapper #main-wrapper #main #content div.issue {
+      background: transparent;
+      border: none; }
+    #wrapper #main-wrapper #main #content div.flash {
+      margin-top: 20px; }
     #wrapper #main-wrapper #main #sidebar {
       background: #595959;
       color: white;

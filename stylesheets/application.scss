@@ -917,6 +917,7 @@ body.controller-welcome {
 
 				.contextual {
 				margin-top:20px;
+				margin-bottom:20px;
 				}
 
 				// Activity
@@ -1013,6 +1014,19 @@ body.controller-welcome {
 				@include border-radius(3px);
 				border-color:#E8E8E8;
 				background:transparent;
+				}
+
+				// Issue 
+
+				div.issue {
+					background: transparent;
+					border:none;
+				}
+
+				// Flash Notice
+
+				div.flash {
+					margin-top: 20px;
 				}
 
 			
