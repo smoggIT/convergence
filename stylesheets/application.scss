@@ -960,6 +960,7 @@ body.controller-welcome {
 					button {
 					@include border-radius(4px);
 					@include linear-gradient(#fff, #DDD);
+					color:#6C6C6C;
 					height:30px;
 					width: 30px;
 					padding:0px;
@@ -992,6 +993,14 @@ body.controller-welcome {
 					}
 					.jstb_img {
 					&:before {content:"\f03e";font-family:FontAwesome;}
+					}
+
+					.jstb_help {
+					&:before {content:"\f128";font-family:FontAwesome;}	
+					}
+
+					.jstb_h1 , .jstb_h2 , .jstb_h3 , .jstb_ul , .jstb_ol , .jstb_bq , .jstb_unbq , .jstb_pre {
+					display: none;
 					}
 
 				}

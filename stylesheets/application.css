@@ -608,6 +608,7 @@ body.controller-welcome #main-wrapper {
       /* Opera 11.10+ */
       background-image: linear-gradient(top, white, #dddddd);
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$fromColor', EndColorStr='$toColor');
+      color: #6C6C6C;
       height: 30px;
       width: 30px;
       padding: 0px;
@@ -640,6 +641,11 @@ body.controller-welcome #main-wrapper {
     #wrapper #main-wrapper #main #content .jstElements .jstb_img:before {
       content: "\f03e";
       font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_help:before {
+      content: "\f128";
+      font-family: FontAwesome; }
+    #wrapper #main-wrapper #main #content .jstElements .jstb_h1, #wrapper #main-wrapper #main #content .jstElements .jstb_h2, #wrapper #main-wrapper #main #content .jstElements .jstb_h3, #wrapper #main-wrapper #main #content .jstElements .jstb_ul, #wrapper #main-wrapper #main #content .jstElements .jstb_ol, #wrapper #main-wrapper #main #content .jstElements .jstb_bq, #wrapper #main-wrapper #main #content .jstElements .jstb_unbq, #wrapper #main-wrapper #main #content .jstElements .jstb_pre {
+      display: none; }
     #wrapper #main-wrapper #main #content #pretty_preview_label {
       cursor: pointer;
       -webkit-border-radius: 4px;
