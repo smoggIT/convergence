@@ -29,8 +29,26 @@ a.svg:after {
 body, html {
   font-family: Source Sans Pro, sans-serif;
   background: #fff; }
+  body #ui-datepicker-div, body .ui-widget, html #ui-datepicker-div, html .ui-widget {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 14px; }
+    body #ui-datepicker-div select, body .ui-widget select, html #ui-datepicker-div select, html .ui-widget select {
+      color: #474747 !important; }
+      body #ui-datepicker-div select option, body .ui-widget select option, html #ui-datepicker-div select option, html .ui-widget select option {
+        font-weight: normal;
+        color: #474747 !important; }
+    body #ui-datepicker-div input, body #ui-datepicker-div select, body #ui-datepicker-div textarea, body #ui-datepicker-div button, body .ui-widget input, body .ui-widget select, body .ui-widget textarea, body .ui-widget button, html #ui-datepicker-div input, html #ui-datepicker-div select, html #ui-datepicker-div textarea, html #ui-datepicker-div button, html .ui-widget input, html .ui-widget select, html .ui-widget textarea, html .ui-widget button {
+      font-family: Source Sans Pro,sans-serif;
+      font-size: 14px; }
+    body #ui-datepicker-div .ui-state-default, body #ui-datepicker-div .ui-widget-content .ui-state-default, body #ui-datepicker-div .ui-widget-header .ui-state-default, body .ui-widget .ui-state-default, body .ui-widget .ui-widget-content .ui-state-default, body .ui-widget .ui-widget-header .ui-state-default, html #ui-datepicker-div .ui-state-default, html #ui-datepicker-div .ui-widget-content .ui-state-default, html #ui-datepicker-div .ui-widget-header .ui-state-default, html .ui-widget .ui-state-default, html .ui-widget .ui-widget-content .ui-state-default, html .ui-widget .ui-widget-header .ui-state-default {
+      font-weight: normal; }
+    body #ui-datepicker-div th, body .ui-widget th, html #ui-datepicker-div th, html .ui-widget th {
+      font-weight: normal !important; }
+    body #ui-datepicker-div .ui-datepicker-title .ui-datepicker-month, body #ui-datepicker-div .ui-datepicker-title .ui-datepicker-year, body .ui-widget .ui-datepicker-title .ui-datepicker-month, body .ui-widget .ui-datepicker-title .ui-datepicker-year, html #ui-datepicker-div .ui-datepicker-title .ui-datepicker-month, html #ui-datepicker-div .ui-datepicker-title .ui-datepicker-year, html .ui-widget .ui-datepicker-title .ui-datepicker-month, html .ui-widget .ui-datepicker-title .ui-datepicker-year {
+      font-weight: normal;
+      color: #fff; }
   body .action-login, html .action-login {
-    background: url(../images/login_background.jpg);
+    background: url(../images/login_background.jpg) right center;
     background-size: cover; }
   body label, html label {
     font-weight: normal; }
@@ -131,27 +149,31 @@ body.controller-welcome #main-wrapper {
       @media screen and (max-width: 992px) {
         #wrapper #top-menu-wrapper #top-menu #user-menu {
           display: none; } }
+      #wrapper #top-menu-wrapper #top-menu #account #loggedas {
+        color: #575757;
+        line-height: 30px;
+        margin: 0px;
+        float: right;
+        text-align: right; }
+        @media screen and (max-width: 992px) {
+          #wrapper #top-menu-wrapper #top-menu #account #loggedas {
+            text-align: left;
+            float: left; } }
+      #wrapper #top-menu-wrapper #top-menu #account ul {
+        float: right; }
+        #wrapper #top-menu-wrapper #top-menu #account ul li a {
+          line-height: 30px; }
+        @media screen and (max-width: 992px) {
+          #wrapper #top-menu-wrapper #top-menu #account ul {
+            text-align: right; } }
       #wrapper #top-menu-wrapper #top-menu #account .logout:before {
         content: "\f08b";
         font-family: FontAwesome;
         margin-right: 5px; }
       #wrapper #top-menu-wrapper #top-menu #account .my-account:before {
-        content: "\f084";
+        content: "\f007";
         font-family: FontAwesome;
         margin-right: 5px; }
-      #wrapper #top-menu-wrapper #top-menu #account li a {
-        line-height: 30px; }
-      @media screen and (max-width: 992px) {
-        #wrapper #top-menu-wrapper #top-menu #account {
-          text-align: right; } }
-      #wrapper #top-menu-wrapper #top-menu #loggedas {
-        color: #575757;
-        line-height: 30px;
-        margin: 0px;
-        text-align: right; }
-        @media screen and (max-width: 992px) {
-          #wrapper #top-menu-wrapper #top-menu #loggedas {
-            text-align: left; } }
   #wrapper #header-wrapper {
     background: #F5F5F5; }
     #wrapper #header-wrapper #header {
@@ -420,6 +442,9 @@ body.controller-welcome #main-wrapper {
             text-align: center; } }
       #wrapper #main-wrapper #main #content #welcome-left .tooltip {
         font-size: 14px; }
+        @media screen and (max-width: 992px) {
+          #wrapper #main-wrapper #main #content #welcome-left .tooltip {
+            display: none !important; } }
       #wrapper #main-wrapper #main #content #welcome-left .tooltip-inner {
         min-width: 150px; }
       #wrapper #main-wrapper #main #content #welcome-left .welcome-menu {
@@ -428,7 +453,7 @@ body.controller-welcome #main-wrapper {
         margin-right: 50px;
         text-align: right;
         font-weight: 200; }
-        @media screen and (max-width: 1500px) {
+        @media screen and (max-width: 1700px) {
           #wrapper #main-wrapper #main #content #welcome-left .welcome-menu {
             text-align: center;
             margin: 0px; } }
@@ -441,10 +466,11 @@ body.controller-welcome #main-wrapper {
               display: inline-block; } }
           #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li span {
             display: inline-block; }
-            @media screen and (max-width: 1500px) {
+            @media screen and (max-width: 1700px) {
               #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li span {
                 display: block;
-                min-width: 80px; } }
+                min-width: 80px;
+                margin-bottom: 5px; } }
             @media screen and (max-width: 992px) {
               #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li span {
                 display: none; } }
@@ -464,7 +490,7 @@ body.controller-welcome #main-wrapper {
             overflow: hidden;
             text-align: center;
             margin-left: 20px; }
-            @media screen and (max-width: 1500px) {
+            @media screen and (max-width: 1700px) {
               #wrapper #main-wrapper #main #content #welcome-left .welcome-menu li a {
                 margin-left: 0px; } }
             @media screen and (max-width: 992px) {
@@ -544,6 +570,28 @@ body.controller-welcome #main-wrapper {
           #wrapper #main-wrapper #main #content #welcome-right .projects .projects-list li .project-content, #wrapper #main-wrapper #main #content #welcome-right .news .projects-list li .project-content {
             border-left: 5px solid #e8e8e8;
             padding-left: 10px; }
+    #wrapper #main-wrapper #main #content .table th {
+      /*text-align:center;*/
+      font-weight: 200;
+      text-transform: uppercase; }
+    #wrapper #main-wrapper #main #content .table tr.context-menu-selection {
+      background: beige !important;
+      color: black !important; }
+      #wrapper #main-wrapper #main #content .table tr.context-menu-selection a {
+        color: black !important; }
+        #wrapper #main-wrapper #main #content .table tr.context-menu-selection a:hover {
+          color: #fdb140 !important; }
+    #wrapper #main-wrapper #main #content .table thead > tr > th {
+      border-bottom: 1px solid #DDDDDD; }
+    #wrapper #main-wrapper #main #content .table td.checkbox {
+      display: table-cell; }
+    #wrapper #main-wrapper #main #content .table td {
+      border: none; }
+      #wrapper #main-wrapper #main #content .table td input {
+        margin: 0px;
+        padding: 0px;
+        float: none;
+        display: inherit; }
     #wrapper #main-wrapper #main #content .mypage-box h3 {
       font-size: 20px;
       font-weight: 200;
@@ -554,6 +602,10 @@ body.controller-welcome #main-wrapper {
     #wrapper #main-wrapper #main #content #new_project {
       float: left;
       margin-bottom: 50px; }
+    #wrapper #main-wrapper #main #content #issue-list th {
+      text-align: center; }
+    #wrapper #main-wrapper #main #content .subject h3 {
+      color: #fdb140; }
     #wrapper #main-wrapper #main #content #issue-form {
       float: left;
       width: 100%;
@@ -565,8 +617,34 @@ body.controller-welcome #main-wrapper {
       #wrapper #main-wrapper #main #content .tabs ul li a.selected {
         color: #404040; }
     #wrapper #main-wrapper #main #content .contextual {
-      margin-top: 20px;
-      margin-bottom: 20px; }
+      font-size: 0.9em;
+      line-height: 1.4em;
+      margin: 20px 0px;
+      text-align: right; }
+      @media screen and (max-width: 480px) {
+        #wrapper #main-wrapper #main #content .contextual {
+          text-align: left; } }
+      #wrapper #main-wrapper #main #content .contextual a {
+        color: #666666;
+        padding: 0px 5px; }
+        #wrapper #main-wrapper #main #content .contextual a:hover {
+          color: #fdb140; }
+      #wrapper #main-wrapper #main #content .contextual .icon-edit:before {
+        content: "\f044";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .issue-48-watcher:before {
+        content: "\f06e";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-copy:before {
+        content: "\f0c5";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-del:before {
+        content: "\f014";
+        font-family: FontAwesome;
+        margin-right: 5px; }
     #wrapper #main-wrapper #main #content #activity h3 {
       font-size: 20px;
       font-weight: 200;
@@ -688,8 +766,39 @@ body.controller-welcome #main-wrapper {
     #wrapper #main-wrapper #main #content div.issue {
       background: transparent;
       border: none; }
+    #wrapper #main-wrapper #main #content .progress {
+      background-color: inherit;
+      border-radius: none;
+      box-shadow: none;
+      height: auto;
+      margin-bottom: 0px;
+      overflow: none; }
     #wrapper #main-wrapper #main #content div.flash {
       margin-top: 20px; }
+    #wrapper #main-wrapper #main #content .splitcontentleft h3 {
+      margin: 10px 0px; }
+    @media screen and (max-width: 992px) {
+      #wrapper #main-wrapper #main #content .splitcontentleft {
+        float: none;
+        width: auto; } }
+    #wrapper #main-wrapper #main #content .splitcontentright h3 {
+      margin: 10px 0px; }
+    @media screen and (max-width: 992px) {
+      #wrapper #main-wrapper #main #content .splitcontentright {
+        float: none;
+        width: auto; } }
+    #wrapper #main-wrapper #main #content #project-list th {
+      text-align: left; }
+    #wrapper #main-wrapper #main #content #users-list .active td {
+      background: inherit; }
+    #wrapper #main-wrapper #main #content #admin-index {
+      background: url(../images/admin_background.png) no-repeat right 20% center; }
+      @media screen and (max-width: 480px) {
+        #wrapper #main-wrapper #main #content #admin-index {
+          background: none; } }
+    #wrapper #main-wrapper #main #content .other-formats {
+      padding-top: 5px;
+      border-top: 1px solid #EEEEEE; }
     #wrapper #main-wrapper #main #sidebar {
       background: #595959;
       color: white;
@@ -718,18 +827,19 @@ body.controller-welcome #main-wrapper {
           margin-top: 10px;
           text-align: center; } }
       #wrapper #main-wrapper #main #sidebar #sidebar-content a {
-        color: white; }
+        color: white;
+        font-weight: 200; }
         #wrapper #main-wrapper #main #sidebar #sidebar-content a:hover {
           color: #fdb140; }
         #wrapper #main-wrapper #main #sidebar #sidebar-content a.selected {
           color: #fdb140; }
       #wrapper #main-wrapper #main #sidebar #sidebar-content ul {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 200; }
         #wrapper #main-wrapper #main #sidebar #sidebar-content ul li {
           margin: 0px; }
           #wrapper #main-wrapper #main #sidebar #sidebar-content ul li label a {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 200; }
           #wrapper #main-wrapper #main #sidebar #sidebar-content ul li a {
             margin: 0px;
@@ -747,6 +857,13 @@ body.controller-welcome #main-wrapper {
         @media screen and (max-width: 992px) {
           #wrapper #main-wrapper #main #sidebar #sidebar-content h3 {
             display: none; } }
+      #wrapper #main-wrapper #main #sidebar #sidebar-content h4 {
+        color: white;
+        font-family: Source Sans Pro,sans-serif;
+        font-weight: 200; }
+        @media screen and (max-width: 992px) {
+          #wrapper #main-wrapper #main #sidebar #sidebar-content h4 {
+            display: none; } }
       #wrapper #main-wrapper #main #sidebar #sidebar-content input {
         background: #F9AD06;
         color: #fff;
@@ -756,10 +873,11 @@ body.controller-welcome #main-wrapper {
         -ms-border-radius: 3px;
         border-radius: 3px;
         padding: 0px 15px;
-        height: 30px;
         vertical-align: middle; }
         #wrapper #main-wrapper #main #sidebar #sidebar-content input:hover {
           color: #7C4E1D; }
+      #wrapper #main-wrapper #main #sidebar #sidebar-content input.button-small {
+        height: 30px; }
       #wrapper #main-wrapper #main #sidebar #sidebar-content .icon-time {
         margin: 0px;
         padding: 0px; }
@@ -768,6 +886,9 @@ body.controller-welcome #main-wrapper {
           font-family: FontAwesome;
           margin-right: 5px;
           color: #8B8B8B; }
+      #wrapper #main-wrapper #main #sidebar #sidebar-content #watchers h3, #wrapper #main-wrapper #main #sidebar #sidebar-content #watcher_groups h3 {
+        font-size: 18px;
+        line-height: 24px; }
   #wrapper #footer-wrapper {
     background: #F5F5F5;
     border-top: 5px solid #E6E6E6;

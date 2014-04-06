@@ -303,8 +303,8 @@ div.square {
   overflow: hidden;
   width: .6em; height: .6em;
 }
-.contextual {float:right; white-space: nowrap; line-height:1.4em;margin-top:5px; padding-left: 10px; font-size:0.9em;}
-.contextual input, .contextual select {font-size:0.9em;}
+/*.contextual {float:right; white-space: nowrap; line-height:1.4em;margin-top:5px; padding-left: 10px; font-size:0.9em;}
+*/.contextual input, .contextual select {font-size:0.9em;}
 .message .contextual { margin-top: 0; }
 
 .splitcontent {overflow:auto;}
@@ -320,7 +320,7 @@ blockquote blockquote { margin-left: 0;}
 abbr  { border-bottom: 1px dotted; cursor: help; }
 textarea.wiki-edit {width:99%; resize:vertical;}
 li p {margin-top: 0;}
-div.issue {background:#ffffdd; padding:6px; margin-bottom:6px;border: 1px solid #d7d7d7;}
+div.issue {background:#ffffdd; /*padding:6px;*/ margin-bottom:6px;border: 1px solid #d7d7d7;}
 p.breadcrumb { font-size: 0.9em; margin: 4px 0 4px 0;}
 p.subtitle { font-size: 0.9em; margin: -6px 0 12px 0; /*font-style: italic; */}
 p.footnote { font-size: 0.9em; margin-top: 0px; margin-bottom: 0px; }
@@ -350,8 +350,8 @@ fieldset#filters td.field { width:230px; }
 fieldset#filters td.operator { width:180px; }
 fieldset#filters td.operator select {max-width:170px;}
 fieldset#filters td.values { white-space:nowrap; }
-fieldset#filters td.values select {min-width:130px;}
-fieldset#filters td.values input {height:1em;}
+/*fieldset#filters td.values select {min-width:130px;}*/
+/*fieldset#filters td.values input {height:1em;}*/
 fieldset#filters td.add-filter { text-align: right; vertical-align: top; }
 
 .toggle-multiselect {background: url(../images/bullet_toggle_plus.png) no-repeat 0% 40%; padding-left:8px; margin-left:0; cursor:pointer;}
