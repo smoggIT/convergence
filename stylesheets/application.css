@@ -271,7 +271,7 @@ body.controller-welcome #main-wrapper {
                 text-align: center; } }
             #wrapper #header-wrapper #header #navbar #main-menu #resp-menu:hover {
               color: #404040; }
-            #wrapper #header-wrapper #header #navbar #main-menu #resp-menu .fa-align-justify {
+            #wrapper #header-wrapper #header #navbar #main-menu #resp-menu .fa-bars {
               margin-right: 5px;
               font-weight: lighter; }
           @media screen and (max-width: 992px) {
@@ -633,7 +633,7 @@ body.controller-welcome #main-wrapper {
         content: "\f044";
         font-family: FontAwesome;
         margin-right: 5px; }
-      #wrapper #main-wrapper #main #content .contextual .issue-48-watcher:before {
+      #wrapper #main-wrapper #main #content .contextual .icon-fav-off:before {
         content: "\f06e";
         font-family: FontAwesome;
         margin-right: 5px; }
@@ -643,6 +643,22 @@ body.controller-welcome #main-wrapper {
         margin-right: 5px; }
       #wrapper #main-wrapper #main #content .contextual .icon-del:before {
         content: "\f014";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-lock:before {
+        content: "\f023";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-unlock:before {
+        content: "\f13e";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-move:before {
+        content: "\f040";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-history:before {
+        content: "\f0c9";
         font-family: FontAwesome;
         margin-right: 5px; }
     #wrapper #main-wrapper #main #content #activity h3 {

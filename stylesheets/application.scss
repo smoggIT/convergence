@@ -459,7 +459,7 @@ body.controller-welcome {
 						}
 						&:hover {color:$dark-gray;}
 						
-						.fa-align-justify {
+						.fa-bars {
 						margin-right: 5px;
 						font-weight: lighter;
 						}
@@ -1021,9 +1021,13 @@ body.controller-welcome {
     				}
 
     				.icon-edit:before {content:"\f044";font-family:FontAwesome;margin-right: 5px;}
-    				.issue-48-watcher:before {content:"\f06e";font-family:FontAwesome;margin-right: 5px;}
+    				.icon-fav-off:before {content:"\f06e";font-family:FontAwesome;margin-right: 5px;}
     				.icon-copy:before {content:"\f0c5";font-family:FontAwesome;margin-right: 5px;}
     				.icon-del:before {content:"\f014";font-family:FontAwesome;margin-right: 5px;}
+    				.icon-lock:before {content:"\f023";font-family:FontAwesome;margin-right: 5px;}
+    				.icon-unlock:before {content:"\f13e";font-family:FontAwesome;margin-right: 5px;}
+					.icon-move:before {content:"\f040";font-family:FontAwesome;margin-right: 5px;}
+					.icon-history:before {content:"\f0c9";font-family:FontAwesome;margin-right: 5px;}
 				}
 
 				// Activity
