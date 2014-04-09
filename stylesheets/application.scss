@@ -478,6 +478,9 @@ body.controller-welcome {
 					}
 
 						ul {
+						white-space: nowrap;
+						overflow-x: scroll;
+						overflow-y: hidden;
 						position:relative;
 						padding:10px 0px;
 						@media screen and (max-width: $medium) {
@@ -910,6 +913,11 @@ body.controller-welcome {
 								.project-content {
 								border-left:5px solid darken(#F5F5F5,5%);
 								padding-left:10px;
+
+									ul {
+									list-style-type: disc;
+									}
+
 								}
 
 							}
@@ -1009,6 +1017,9 @@ body.controller-welcome {
 				// Contextual menu
 
 				.contextual {
+				white-space: nowrap;
+				overflow-x: scroll;
+				overflow-y: hidden;
     			font-size: 0.9em;
     			line-height: 1.4em;
     			margin:20px 0px;
@@ -1028,6 +1039,7 @@ body.controller-welcome {
     				.icon-unlock:before {content:"\f13e";font-family:FontAwesome;margin-right: 5px;}
 					.icon-move:before {content:"\f040";font-family:FontAwesome;margin-right: 5px;}
 					.icon-history:before {content:"\f0c9";font-family:FontAwesome;margin-right: 5px;}
+					.icon-add:before {content:"\f055";font-family:FontAwesome;margin-right: 5px;}
 				}
 
 				// Activity
@@ -1155,6 +1167,25 @@ body.controller-welcome {
 
 				div.flash {
 					margin-top: 20px;
+				}
+
+				// Projects List
+
+				#projects-index {
+				margin-top:20px;
+					a {
+					&.parent , &.root {color:$blue;&:hover{color:$orange;}}
+					&.child {color:#A6A6A6;&:hover{color:$orange;}}
+					}
+
+					.description {
+						ul {
+							li {
+							list-style-type: disc; 
+							}
+						}
+					}
+
 				}
 
 				// Projects 

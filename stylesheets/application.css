@@ -283,6 +283,9 @@ body.controller-welcome #main-wrapper {
               display: none;
               text-align: center; } }
           #wrapper #header-wrapper #header #navbar #main-menu #main-menu-content ul {
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
             position: relative;
             padding: 10px 0px; }
             @media screen and (max-width: 992px) {
@@ -570,6 +573,8 @@ body.controller-welcome #main-wrapper {
           #wrapper #main-wrapper #main #content #welcome-right .projects .projects-list li .project-content, #wrapper #main-wrapper #main #content #welcome-right .news .projects-list li .project-content {
             border-left: 5px solid #e8e8e8;
             padding-left: 10px; }
+            #wrapper #main-wrapper #main #content #welcome-right .projects .projects-list li .project-content ul, #wrapper #main-wrapper #main #content #welcome-right .news .projects-list li .project-content ul {
+              list-style-type: disc; }
     #wrapper #main-wrapper #main #content .table th {
       /*text-align:center;*/
       font-weight: 200;
@@ -617,6 +622,9 @@ body.controller-welcome #main-wrapper {
       #wrapper #main-wrapper #main #content .tabs ul li a.selected {
         color: #404040; }
     #wrapper #main-wrapper #main #content .contextual {
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
       font-size: 0.9em;
       line-height: 1.4em;
       margin: 20px 0px;
@@ -659,6 +667,10 @@ body.controller-welcome #main-wrapper {
         margin-right: 5px; }
       #wrapper #main-wrapper #main #content .contextual .icon-history:before {
         content: "\f0c9";
+        font-family: FontAwesome;
+        margin-right: 5px; }
+      #wrapper #main-wrapper #main #content .contextual .icon-add:before {
+        content: "\f055";
         font-family: FontAwesome;
         margin-right: 5px; }
     #wrapper #main-wrapper #main #content #activity h3 {
@@ -791,6 +803,18 @@ body.controller-welcome #main-wrapper {
       overflow: none; }
     #wrapper #main-wrapper #main #content div.flash {
       margin-top: 20px; }
+    #wrapper #main-wrapper #main #content #projects-index {
+      margin-top: 20px; }
+      #wrapper #main-wrapper #main #content #projects-index a.parent, #wrapper #main-wrapper #main #content #projects-index a.root {
+        color: #094fa4; }
+        #wrapper #main-wrapper #main #content #projects-index a.parent:hover, #wrapper #main-wrapper #main #content #projects-index a.root:hover {
+          color: #fdb140; }
+      #wrapper #main-wrapper #main #content #projects-index a.child {
+        color: #A6A6A6; }
+        #wrapper #main-wrapper #main #content #projects-index a.child:hover {
+          color: #fdb140; }
+      #wrapper #main-wrapper #main #content #projects-index .description ul li {
+        list-style-type: disc; }
     #wrapper #main-wrapper #main #content .splitcontentleft h3 {
       margin: 10px 0px; }
     @media screen and (max-width: 992px) {
